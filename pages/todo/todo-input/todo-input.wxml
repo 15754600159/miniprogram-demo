@@ -1,0 +1,14 @@
+<!-- 
+@desc: todo - todoInput
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view>
+  <input 
+    placeholder="what needs to be done?"
+    value="{{inputValue}}"
+    bindinput="inputChange"
+    bindconfirm='addTodo'
+  ></input>
+</view>

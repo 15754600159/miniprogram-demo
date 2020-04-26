@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "todo演示",
+  "usingComponents": {
+    "todo-input": "./todo-input/todo-input",
+    "todo-list": "./todo-list/todo-list",
+    "todo-footer": "./todo-footer/todo-footer"
+  }
+}

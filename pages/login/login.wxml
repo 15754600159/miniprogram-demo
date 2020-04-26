@@ -1,0 +1,36 @@
+<!-- 
+@desc: 登录
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view class="login-phone-number-container">
+
+  <!-- navigation start -->
+  <navigation-bar navTitle="手机账号登录"></navigation-bar>
+  <!-- navigation end -->
+
+  <!-- page content start -->
+  <view class="page-content">
+    <view class="app-main-body">
+      <image src="./images/logo.png"></image>
+      <view class="app-name">登录</view>
+    </view>
+
+    <view class="input-item">
+      <input class="phone-number-input" placeholder="手机号码" value="{{phoneNumber}}" bindinput="phoneInputChange"></input>
+      <image class="icon-phone-number" src="./images/phone-number.png"></image>
+      <image class="icon-clear" src="./images/icon-clear.png" hidden="{{!isPhoneNumberClearShow}}" bindtap="clearPhoneNumber"></image>
+    </view>
+
+    <view class="input-item input-item-password">
+      <input class="password-input" placeholder="密码" type="password" value="{{password}}" bindinput="passwordInputChange"></input>
+      <image class="icon-password" src="./images/password.png"></image>
+      <image class="icon-clear" src="./images/icon-clear.png" hidden="{{!isPasswordClearShow}}" bindtap="clearPassword"></image>
+    </view>
+
+    <button class="blue-btn" bindtap="submit" disabled="{{isSubmitBtnDisabled}}" loading="{{isSubmitBtnLoading}}">登录</button>
+  </view>
+  <!-- page content end -->
+
+</view>

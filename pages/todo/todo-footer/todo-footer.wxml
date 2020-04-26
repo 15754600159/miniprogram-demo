@@ -1,0 +1,25 @@
+<!-- 
+@desc: todo - todoFooter
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view class="todo-footer">
+  <view class="footer-left">{{todoLength}} item left</view>
+  <view class="footer-center">
+    <view 
+      wx:for="{{todoType}}" 
+      wx:key="key"
+      class="{{todo.curFilterType === item.key ? 'active' : ''}}"
+      bindtap="handleClickType"
+      data-type-code="{{item.key}}"
+    >{{item.title}}</view>
+    <!-- <view class="active">All</view>
+    <view>Active</view>
+    <view>Completed</view> -->
+  </view>
+  <view 
+    class="footer-right"
+    bindtap="handleClearCompleted"
+  >Clear completed</view>
+</view>

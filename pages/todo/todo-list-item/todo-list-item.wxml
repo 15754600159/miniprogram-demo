@@ -1,0 +1,18 @@
+<!-- 
+@desc: todo - todoList - todoListItem
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view class="list-item">
+  <checkbox-group bindchange="checkboxChange">
+    <checkbox checked="{{data.isDone}}" />
+  </checkbox-group>
+  <text class="list-item-text {{data.isDone ? 'done' : ''}}">{{data.name}}</text>
+  <icon 
+    class="list-item-icon" 
+    type="clear" 
+    size="20"
+    bindtap="deleteItem"
+  />
+</view>

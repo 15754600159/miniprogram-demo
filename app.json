@@ -1,13 +1,54 @@
 {
-  "pages": [
+  "pages":[
     "pages/index/index",
-    "pages/detail/detail"
+    "pages/logs/logs",
+    "pages/todo/todo",
+    "pages/vant/vant",
+    "pages/user/user",
+    "pages/login/login"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+  "tabBar": {
+    "custom": true,
+    "color": "#929292",
+    "selectedColor": "#0D83EE",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab-bar-icons/icon-index.png",
+        "selectedIconPath": "/images/tab-bar-icons/icon-index-hover.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "/images/tab-bar-icons/icon-course-center.png",
+        "selectedIconPath": "/images/tab-bar-icons/icon-course-center-hover.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "todo",
+        "iconPath": "/images/tab-bar-icons/icon-visitor-notice.png",
+        "selectedIconPath": "/images/tab-bar-icons/icon-visitor-notice-hover.png"
+      },
+      {
+        "pagePath": "pages/vant/vant",
+        "text": "vant",
+        "iconPath": "/images/tab-bar-icons/icon-my-train.png",
+        "selectedIconPath": "/images/tab-bar-icons/icon-my-train-hover.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "/images/tab-bar-icons/icon-personal-center.png",
+        "selectedIconPath": "/images/tab-bar-icons/icon-personal-center-hover.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0d83ee",
+    "navigationBarTitleText": "微信小程序脚手架",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,33 @@
+<!-- 
+@desc: user
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<!--pages/my-train/my-train.wxml-->
+<view class="container user">
+
+  <!-- head start -->
+  <view class="header-box">
+    <image src="{{headImage||'./images/icon-head.png'}}"></image>
+    <view wx:if="{{!isLogin}}">
+      <text class="line-1" bindtap="handleLogin">点击登录</text>
+      <text class="line-2">员工登录可查看更多内容</text>
+    </view>
+    <view wx:if="{{isLogin}}">
+      <view class="line-1">
+        <text wx:if="{{userName}}">{{userName}}</text>
+        <text wx:if="{{phoneNumber}}">{{phoneNumber}}</text>
+      </view>
+      <view class="line-2">
+        <text wx:if="{{deptName}}">{{deptName}}</text>
+        <text wx:if="{{companyName}}">{{companyName}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- head end -->
+
+  <!-- login start -->
+  <view wx:if="{{isLogin}}" class="login-out" bindtap="handleLogout">退出登录</view>
+  <!-- login end -->
+</view>

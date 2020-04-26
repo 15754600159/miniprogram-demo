@@ -1,0 +1,32 @@
+<!-- 
+@desc: vant
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view class="container vant">
+  <van-button type="primary">按钮</van-button>
+
+  <van-divider />
+
+  <van-row>
+    <van-col span="8">span: 8</van-col>
+    <van-col span="8">span: 8</van-col>
+    <van-col span="8">span: 8</van-col>
+  </van-row>
+
+  <van-divider />
+
+  <van-checkbox>复选框</van-checkbox>
+  
+  <van-divider />
+
+  <van-skeleton
+    title
+    avatar
+    row="3"
+    loading="{{ loading }}"
+  >
+    <view>实际内容</view>
+  </van-skeleton>
+</view>

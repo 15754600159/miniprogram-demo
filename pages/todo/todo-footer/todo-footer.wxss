@@ -1,0 +1,31 @@
+/**
+ * @desc: todo - todoFooter
+ * @author: shengshunyan
+ * @date: 2020-4-18
+ */
+
+.todo-footer {
+  display: flex;
+  font-size: 20rpx;
+  color: #777;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 10rpx 5rpx;
+}
+
+.footer-center {
+  display: flex;
+  width: 250rpx;
+  justify-content: space-around;
+}
+
+.footer-center view {
+  padding: 0 10rpx;
+  border: 1px solid transparent;
+}
+
+.footer-center .active {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}

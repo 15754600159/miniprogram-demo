@@ -1,0 +1,17 @@
+<!-- 
+@desc: todo
+@author: shengshunyan
+@date: 2020-4-18
+-->
+
+<view class="container todo">
+  
+  <view class="todo-header">todos</view>
+
+  <view class="content">
+    <todo-input></todo-input>
+    <todo-list></todo-list>
+    <todo-footer></todo-footer>
+  </view>
+
+</view>

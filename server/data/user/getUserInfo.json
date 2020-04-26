@@ -1,0 +1,8 @@
+{
+    "data": {
+      "userName": "小明",
+      "permission": ["index", "logs", "todo", "vant", "user"]
+    },
+    "statusCode": 200,
+    "message": "success"
+}

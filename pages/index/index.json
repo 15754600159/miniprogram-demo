@@ -1,6 +1,4 @@
 {
-  "usingComponents": {
-    "MyTitle": "../../components/MyTitle/MyTitle"
-  },
-  "navigationBarTitleText": "Bilibili"
+  "navigationBarTitleText": "首页",
+  "usingComponents": {}
 }
